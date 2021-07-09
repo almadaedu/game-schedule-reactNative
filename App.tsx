@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { SignIn } from './src/screens/signIn/index';
+import { SignIn } from './src/screens/SignIn/index';
 
 export default function App() {
   return (

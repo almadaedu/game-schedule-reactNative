@@ -1,23 +1,37 @@
-import React, { useState} from "react";
-import {View, Text, TextInput} from "react-native";
+import React from "react";
 import { styles } from "./style";
+import { View, Text, Image, StatusBar, Button } from "react-native";
+import Illustrationimg from '../../assets/illustration.png'
+import { ButtonIcon } from "../../components/ButtonIcon";
+
 
 
 export function SignIn(){
-    const [text, setText] = useState('Edu');
 
     return(
         <View style = {styles.container}>
-            <Text>Olá Mundo</Text>
-            
-            <TextInput 
-            style = {styles.input} 
-            onChangeText = {setText}
+            <StatusBar
+                barStyle = "light-content"
+                backgroundColor = "transparent"
+                translucent 
             />
 
-            <Text>
-                Você digitou { text }
+
+        <Image source={Illustrationimg} style={styles.image} resizeMode ="stretch"/>
+        <View style={styles.content}>
+            <Text style={styles.title}>
+                Organize suas jogatinas
             </Text>
+            <Text style = {styles.subtitle}>
+                Crie grupos para jogar seus games {`\n`}
+                favoritos com seus amigos
+            </Text>
+            <ButtonIcon 
+            title = "Entrar com Discord"
+             
+            />
+
+        </View>
 
         </View>
     )
