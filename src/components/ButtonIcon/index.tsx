@@ -1,13 +1,21 @@
+//#region Imports
+
 import React from "react";
 import { Text, Image, View, TouchableOpacity } from "react-native";
 import DiscordImg from '../../assets/images/discord.png'
-import { styles } from './styles'
+import  useStyles  from './styles'
+
+
+//#endregion
 
 type Props = {
     title: string
 }
 
-export function ButtonIcon({ title}: Props){
+const ButtonIcon = ({ title }: Props) => {
+
+    const styles = useStyles()
+
     return(
         <TouchableOpacity style = {styles.container} activeOpacity={.6}>
             <View style={styles.iconWrapper}>
@@ -20,3 +28,6 @@ export function ButtonIcon({ title}: Props){
         </TouchableOpacity>
     )
 }
+
+
+export default ButtonIcon

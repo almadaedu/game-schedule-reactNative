@@ -1,8 +1,12 @@
+//#region Imports
+
 import React from 'react';
 import { Image, Text, View } from 'react-native';
 import Illustrationimg from '../../assets/images/illustration.png';
-import { ButtonIcon } from '../../components/ButtonIcon';
+import  ButtonIcon  from '../../components/ButtonIcon';
 import  useStyles  from './styles';
+
+//#endregion
 
 const SignIn = () => {
     const styles = useStyles()

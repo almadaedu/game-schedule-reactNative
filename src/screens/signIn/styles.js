@@ -1,5 +1,9 @@
+//#region Imports
+
 import { StyleSheet } from 'react-native';
 import { THEME } from '../../global/styles/theme';
+
+//#endregion
 
 
 const useStyles = () =>{
