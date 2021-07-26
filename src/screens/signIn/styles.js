@@ -13,8 +13,7 @@ const useStyles = () =>{
             flex: 1,
             justifyContent: 'center',
             alignItems: 'center',
-            backgroundColor: THEME.colors.secondary100,
-            },
+        },
             image: {
                 width: '100%',
                 height: 360,
